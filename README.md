@@ -1,1 +1,5 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Pet Mansion
+
+Web site for https://www.instagram.com/petmansion/.
+
+Built with [Next.js](https://nextjs.org/).

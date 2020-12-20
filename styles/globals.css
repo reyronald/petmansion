@@ -1,0 +1,22 @@
+:root {
+  --color-brand-green: #7ccece;
+  --color-brand-orange: #f16c4a;
+  --color-brand-black: #5b5a5a;
+  --color-background: #f2f2f2;
+  --color-link: #0070f3;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background: var(--color-background);
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
