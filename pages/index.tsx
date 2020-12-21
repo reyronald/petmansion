@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/Link'
 import Image from 'next/image'
 
 import { Map } from '../components/Map'
@@ -19,6 +18,11 @@ export default function Home() {
             />
           </div>
           <h1 className={styles.title}>Pet Mansion</h1>
+
+          <p className={styles.description}>
+            Hotel y peluquería para perros libre de jaulas en Santo Domingo,
+            República Dominicana
+          </p>
 
           <p className={styles.description}>
             Visítanos en{' '}
