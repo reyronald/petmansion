@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from '../styles/Map.module.css'
 
-const API_KEY = 'AIzaSyCyFN_TiRf7NKr0RCg_7YPRj8VTQB-gC1c'
+const API_KEY = process.env.GOOGLE_MAPS_API_KEY
 
 // https://developers.google.com/places/web-service/place-id
 const PET_MANSION_PLACE_ID = 'ChIJ87PXIQWKr44RxTDWhEKl2lI'
