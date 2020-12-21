@@ -14,17 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  a {
-    color: var(--color-link);
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus,
-  a:active {
-    text-decoration: underline;
-  }
+  max-width: 550px;
 }
 
 .logo {
@@ -49,6 +39,7 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  margin: 1em 0 0 0;
 }
 
 .instagramLogo {
