@@ -27,18 +27,6 @@ export default function Home() {
             República Dominicana
           </p>
 
-          <p className={styles.description}>
-            Visítanos en{' '}
-            <img
-              src="/instagram.png"
-              alt="Instagram"
-              width="504"
-              height="504"
-              className={styles.instagramLogo}
-            />{' '}
-            <a href="https://instagram.com/petmansion">@petmansion</a>
-          </p>
-
           <div className={styles.links}>
             <a
               href="https://forms.gle/uDkVxnHQNnoygp5w8"
