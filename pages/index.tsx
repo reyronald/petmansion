@@ -15,7 +15,7 @@ export default function Home() {
         <main className={styles.main}>
           <div className={styles.logo}>
             <Image
-              src="/branding/logo-petmansion.png"
+              src="/branding/logo-petmansion-transparent.png"
               width={1338}
               height={1242}
             />
