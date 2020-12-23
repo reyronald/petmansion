@@ -33,6 +33,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://petmansion.com.do/"></meta>
 
         <meta name="twitter:card" content="summary"></meta>
+        <meta
+          property="twitter:image"
+          content="/branding/logo-petmansion.jpg"
+        ></meta>
         <meta name="twitter:image:alt" content="Logo"></meta>
 
         <link rel="icon" href="/branding/dog face small.ico" />
