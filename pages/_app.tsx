@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         ></meta>
         <meta
           property="og:image"
-          content="/branding/logo-petmansion.png"
+          content="/branding/logo-petmansion.jpg"
         ></meta>
         <meta property="og:url" content="https://petmansion.com.do/"></meta>
 
