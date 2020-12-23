@@ -1,5 +1,5 @@
 .button {
-  background: var(--color-brand-orange);
+  background: var(--color-brand-orange-dark);
   color: white;
   border: none;
   padding: 0.7rem 2rem;
@@ -8,4 +8,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 50px;
 }

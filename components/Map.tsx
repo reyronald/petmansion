@@ -1,5 +1,3 @@
-import React from 'react'
-
 import styles from '../styles/Map.module.css'
 
 const API_KEY = process.env.GOOGLE_MAPS_API_KEY
@@ -11,6 +9,7 @@ export function Map() {
   return (
     <div className={styles.map}>
       <iframe
+        title="Map"
         width="100%"
         height="100%"
         frameBorder="0"
