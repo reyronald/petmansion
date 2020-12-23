@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         ></meta>
 
         <meta property="og:title" content="Pet Mansion" />
+        <meta property="og:site_name" content="Pet Mansion" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://petmansion.com.do/" />
         <meta
@@ -30,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:image"
-          content="https://petmansion.com.do/branding/logo-petmansion.jpg"
+          content="https://petmansion.com.do/branding/logo-petmansion-900x900.png"
         />
         <meta property="og:image:alt" content="Logo" />
         <meta property="og:locale" content="es_DO" />
