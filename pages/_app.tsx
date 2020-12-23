@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:image"
           content="https://petmansion.com.do/branding/logo-petmansion.jpg"
         />
-        <meta name="og:image:alt" content="Logo" />
+        <meta property="og:image:alt" content="Logo" />
         <meta property="og:locale" content="es_DO" />
 
         <meta name="twitter:card" content="summary" />
