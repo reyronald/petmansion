@@ -15,9 +15,12 @@ export default function Home() {
         <main className={styles.main}>
           <div className={styles.logo}>
             <Image
-              src="/branding/logo-petmansion-transparent.png"
-              width={1338}
-              height={1242}
+              priority
+              src="/branding/logo-petmansion-transparent-300x300.png"
+              alt="logo"
+              loading="eager"
+              width={300}
+              height={300}
             />
           </div>
           <h1 className={styles.title}>Pet Mansion</h1>
