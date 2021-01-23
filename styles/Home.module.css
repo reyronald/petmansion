@@ -9,6 +9,7 @@
 
 .main {
   @media only screen and (max-height: 720px) {
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
@@ -25,7 +26,7 @@
 }
 
 .logo {
-  width: 300px;
+  width: 200px;
 }
 
 .title {
@@ -34,7 +35,7 @@
   font-size: 4rem;
 
   @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -63,3 +64,128 @@
     margin-top: 1em;
   }
 }
+
+/* Hotel section */
+
+.hotel {
+  font-size: 1.1rem;
+  width: 100%;
+  min-height: 740px;
+
+  h2 {
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+
+  h2,
+  div,
+  span,
+  p {
+    color: white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.hotelImageContainer {
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  img {
+    filter: opacity(0.3);
+  }
+}
+
+.hotelTextContainer {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1440px) {
+    flex-direction: column;
+  }
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider > div {
+  background: var(--color-brand-orange);
+
+  @media only screen and (max-width: 1440px) {
+    max-width: 580px;
+    width: 80%;
+    height: 3px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 3px;
+    height: 80%;
+  }
+}
+
+.hotelTextFirst,
+.hotlTextSecond {
+  display: flex;
+  place-items: center;
+  flex-basis: 50%;
+}
+
+.hotelTextFirst > div,
+.hotlTextSecond > div {
+  margin: 0 auto;
+
+  @media only screen and (max-width: 710px) {
+    padding: 30px 20px;
+  }
+  @media only screen and (min-width: 710px) {
+    padding: 60px 0;
+  }
+}
+
+.hotelTextFirst > div {
+  width: 390px;
+}
+
+.hotlTextSecond > div {
+  width: 510px;
+}
+
+.requirementsList {
+  @media only screen and (max-width: 710px) {
+    padding-left: 20px;
+  }
+}
+
+.price {
+  font-weight: 500;
+  text-align: center;
+
+  > span {
+    vertical-align: middle;
+  }
+
+  .currency {
+    font-size: 2rem;
+  }
+
+  .priceBase {
+    font-size: 3rem;
+  }
+
+  .priceDecimals {
+    font-size: 1.5rem;
+  }
+}
+
+/* End Hotel Section */
