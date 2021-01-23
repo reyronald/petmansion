@@ -68,8 +68,6 @@ export default function Home() {
         </main>
       </div>
 
-      <Map />
-
       <section className={styles.hotel}>
         <div className={styles.hotelImageContainer}>
           <Image
@@ -179,6 +177,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Map />
     </>
   )
 }
