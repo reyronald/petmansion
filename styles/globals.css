@@ -75,13 +75,17 @@ p {
   color: var(--color-text-brand-green);
 }
 
+.color-text-brand-orange {
+  color: var(--color-brand-orange-dark);
+}
+
 .font-brand {
   font-family: Mountains of Christmas;
   font-weight: bold;
 }
 
 .font-bold {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .text-center {

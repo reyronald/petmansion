@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import { Map } from '../components/Map'
+import { PawIcon } from '../components/PawIcon'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
 import { InstagramIcon } from '../components/InstagramIcon'
 
@@ -68,7 +69,7 @@ export default function Home() {
         </main>
       </div>
 
-      <section className={styles.hotel}>
+      <section id="hotel" className={styles.hotel}>
         <div className={styles.hotelImageContainer}>
           <Image
             src="/play-area.jpg"
@@ -101,22 +102,6 @@ export default function Home() {
                     Domingos no hay recepción ni entrega. Sólo trabajamos de
                     manera interna.
                   </strong>
-                </li>
-              </ul>
-
-              <p>Pregunta por nuestros servicios de:</p>
-
-              <ul>
-                <li>
-                  <strong className="font-bold">Baños y peluquería</strong>
-                </li>
-                <li>
-                  <strong className="font-bold">Play Day</strong> (pasa días de
-                  juego)
-                </li>
-                <li>
-                  <strong className="font-bold">Pet Moto</strong> (peluquería a
-                  domicilio)
                 </li>
               </ul>
             </div>
@@ -173,6 +158,133 @@ export default function Home() {
                 <li>Nexgard para evitar pulgas y garrapatas</li>
                 <li>Traer comida</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="grooming" className={styles.grooming}>
+        <div className={styles.groomingHeader}>
+          <div className={styles.groomingTitleContainer}>
+            <h3>Baños y peluquería</h3>
+          </div>
+        </div>
+
+        <div className={styles.groomingInfo}>
+          <div className={styles.dogPaw}>
+            <PawIcon />
+          </div>
+
+          <div className={styles.groomingTiers}>
+            <div>
+              <h3>Baño Regular</h3>
+
+              <ul>
+                <li>
+                  1-10 libras <strong className="font-bold">RD$350</strong>
+                </li>
+                <li>
+                  11-20 libras <strong className="font-bold">RD$450</strong>
+                </li>
+              </ul>
+
+              <p>Baño, secado y colonia.</p>
+            </div>
+
+            <div>
+              <h3>Baño Deluxe</h3>
+
+              <ul>
+                <li>
+                  1-20 libras <strong className="font-bold">RD$600</strong>
+                </li>
+              </ul>
+
+              <p>
+                Baño, secado, acondicionador, leave-in, corte de uñas, limpieza
+                de oído, cepillado dental, vaciado perianal y colonia.
+              </p>
+            </div>
+
+            <div>
+              <h3>Baño Premium</h3>
+
+              <ul>
+                <li>
+                  1-20 libras <strong className="font-bold">RD$850</strong>
+                </li>
+              </ul>
+
+              <p>
+                Baño, secado, acondicionador, leave-in, corte de uñas, limpieza
+                de oído, cepillado dental, vaciado perianal, recorte de patas,
+                carita, área de bikini, colonia y bufanda.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.groomingAdditionals}>
+            <div>
+              <h3>Adicionales</h3>
+
+              <ul>
+                <li>
+                  Baño con línea <strong className="font-bold">+RD$150</strong>
+                  <ul>
+                    <li>Anti-caida de pelo con línea Shed-X</li>
+                    <li>Shampoo de avena con línea Walsh</li>
+                  </ul>
+                </li>
+
+                <li>
+                  Baño Medicado <strong className="font-bold">+RD$150</strong>
+                  <br />
+                  Shampoo de clorexidina o con azufre.
+                </li>
+
+                <li>
+                  Bufanda de muecas{' '}
+                  <strong className="font-bold">+RD$350</strong>
+                </li>
+                <li>
+                  Solo corte de uñas{' '}
+                  <strong className="font-bold">+RD$150</strong>
+                </li>
+                <li>
+                  Corte bajo <strong className="font-bold">+RD$400</strong>
+                </li>
+                <li>
+                  Corte especializado{' '}
+                  <strong className="font-bold">+RD$500</strong>
+                </li>
+                <li>
+                  Deslanado <strong className="font-bold">+RD$500</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className={`${styles.groomingHours} text-center`}>
+            <div>
+              <p>
+                <span className="color-text-brand-orange font-bold">
+                  Lunes a Viernes
+                </span>
+                <br />
+                <strong className="font-bold">9:00 A.M. a 6:00 P.M.</strong>
+                <br />
+                Recibimos hasta las 4:00 P.M.
+              </p>
+
+              <p>
+                <span className="color-text-brand-orange font-bold">
+                  Sábados
+                </span>
+                <br />
+                <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
+                <br />
+                Recibimos hasta las 3:00 P.M.
+              </p>
             </div>
           </div>
         </div>

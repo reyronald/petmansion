@@ -189,3 +189,86 @@
 }
 
 /* End Hotel Section */
+
+/* Grooming section */
+
+.grooming {
+  position: relative;
+}
+
+.dogPaw {
+  position: absolute;
+  transform: rotateZ(15deg);
+  color: var(--color-brand-black);
+
+  @media only screen and (max-width: 350px) {
+    display: none;
+  }
+  @media only screen and (max-width: 460px) {
+    left: 250px;
+  }
+  @media only screen and (max-width: 800px) {
+    top: 75px;
+    left: 280px;
+  }
+  @media only screen and (min-width: 800px) {
+    top: 100px;
+    left: 272px;
+  }
+}
+
+.groomingHeader {
+  height: 200px;
+  background: var(--color-brand-green);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.groomingTitleContainer {
+  flex-basis: 800px;
+  font-size: 3rem;
+
+  @media only screen and (max-width: 800px) {
+    flex-basis: 450px;
+    font-size: 2.5rem;
+    padding: 0 20px;
+  }
+}
+
+.groomingInfo {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  display: grid;
+  grid-column-gap: 45px;
+  grid-template-areas:
+    'tiers additionals'
+    'tiers hours';
+
+  @media only screen and (max-width: 800px) {
+    padding: 20px 20px;
+    grid-template-areas:
+      'tiers'
+      'additionals'
+      'hours';
+    max-width: 450px;
+  }
+}
+
+.groomingTiers {
+  grid-area: tiers;
+}
+
+.groomingAdditionals {
+  grid-area: additionals;
+}
+
+.groomingHours {
+  grid-area: hours;
+}
+
+/* End Grooming section */
