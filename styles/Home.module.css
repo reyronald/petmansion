@@ -197,24 +197,11 @@
 }
 
 .dogPaw {
-  position: absolute;
-  transform: rotateZ(15deg);
   color: var(--color-brand-black);
-
-  @media only screen and (max-width: 350px) {
-    display: none;
-  }
-  @media only screen and (max-width: 460px) {
-    left: 250px;
-  }
-  @media only screen and (max-width: 800px) {
-    top: 75px;
-    left: 280px;
-  }
-  @media only screen and (min-width: 800px) {
-    top: 100px;
-    left: 272px;
-  }
+  transform: rotateZ(15deg);
+  position: absolute;
+  left: calc(280px + (1rem - 16px) * 5);
+  top: 100px;
 }
 
 .groomingHeader {
