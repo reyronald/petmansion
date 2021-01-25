@@ -54,10 +54,31 @@ export default function Home() {
             </a>
 
             <a
-              href="https://forms.gle/uDkVxnHQNnoygp5w8"
+              href="https://forms.gle/8pfcA4dgqDtkomQQA"
               className={buttonStyles.button}
             >
-              Reservas para nuevos clientes
+              Registro de nuevos clientes
+            </a>
+
+            <a
+              href="https://forms.gle/K59iqaBoRqP3ijA66"
+              className={buttonStyles.button}
+            >
+              Reservas de hotel
+            </a>
+
+            <a
+              href="https://forms.gle/XiD93JvoSrSrKvQa6"
+              className={buttonStyles.button}
+            >
+              Reservas de peluquería
+            </a>
+
+            <a
+              href="https://forms.gle/tJTKJ6YDeFZNAj9Z6"
+              className={buttonStyles.button}
+            >
+              Reservas de play day
             </a>
           </div>
 
