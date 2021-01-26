@@ -14,7 +14,7 @@ import buttonStyles from '../styles/Button.module.css'
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.Home}>
       <div className={styles.container}>
         <main className={styles.main}>
           <div className={styles.logo}>
@@ -184,10 +184,106 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="playday" className={styles.playday}>
+        <div className={styles.playdayPicture}>
+          <Image
+            src="/playday.jpg"
+            alt="área de juegos del hotel"
+            loading="lazy"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+
+        <div className={styles.playdayInfo}>
+          <div className={styles.playdayInfoInner}>
+            <h2>Play Day</h2>
+
+            <p>
+              El PLAY DAY es un pasa día de juegos, socialización y diversión
+              para perros medianos y pequeños.
+            </p>
+
+            <p>
+              Es ideal para esos peludos juguetones que necesitan mucha
+              actividad y ejercicio. Aquí pueden hacer uso de toda esa energía,
+              y también para esos tímidos y temerosos pues las actividades de
+              juego y socialización que realizamos los ayudan muchísimo a
+              mejorar su comportamiento.
+            </p>
+
+            <p>
+              <strong className="font-bold text-uppercase">Incluye</strong>
+            </p>
+
+            <ul>
+              <li>Agua potable y fresca siempre.</li>
+              <li>
+                Área de juego asegurada con altas paredes y divisiones internas
+                para la seguridad de su mascota.
+              </li>
+              <li>Techo con protección UV.</li>
+              <li>Abanicos industriales para la ventilación.</li>
+              <li>
+                Trabajo de integración y socialización con la manada y juegos de
+                estimulación mental.
+              </li>
+              <li>Supervisión constante.</li>
+              <li>
+                Accesorios para la utilización durante su estadía (platos,
+                camas, meriendas, entre otros).
+              </li>
+              <li>Y sobre todo mucho cariño y atención.</li>
+            </ul>
+
+            <p>
+              <strong className="font-bold text-uppercase">Requisitos</strong>
+            </p>
+
+            <ul>
+              <li>Sólo para perros menores a 20 libras</li>
+              <li>Preventivo para pulgas y garrapatas</li>
+            </ul>
+
+            <p className={`${styles.playdayPrice} text-center`}>
+              <strong className="font-bold">RD$300.00</strong>
+            </p>
+
+            <div className="text-center">
+              <p>
+                <span className="color-text-brand-orange font-bold">
+                  Martes y Jueves
+                </span>
+                <br />
+                <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
+              </p>
+
+              <p>
+                <span className="color-text-brand-orange font-bold">
+                  Miércoles
+                </span>
+                <br />
+                <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
+                <br />
+                Sólo para cachorros
+              </p>
+
+              <p>
+                <span className="color-text-brand-orange font-bold">
+                  Sábados
+                </span>
+                <br />
+                <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="grooming" className={styles.grooming}>
         <div className={styles.groomingHeader}>
           <div className={styles.groomingTitleContainer}>
-            <h3>Baños y peluquería</h3>
+            <h2>Baños y peluquería</h2>
           </div>
         </div>
 
@@ -286,32 +382,28 @@ export default function Home() {
           </div>
 
           <div className={`${styles.groomingHours} text-center`}>
-            <div>
-              <p>
-                <span className="color-text-brand-orange font-bold">
-                  Lunes a Viernes
-                </span>
-                <br />
-                <strong className="font-bold">9:00 A.M. a 6:00 P.M.</strong>
-                <br />
-                Recibimos hasta las 4:00 P.M.
-              </p>
+            <p>
+              <span className="color-text-brand-orange font-bold">
+                Lunes a Viernes
+              </span>
+              <br />
+              <strong className="font-bold">9:00 A.M. a 6:00 P.M.</strong>
+              <br />
+              Recibimos hasta las 4:00 P.M.
+            </p>
 
-              <p>
-                <span className="color-text-brand-orange font-bold">
-                  Sábados
-                </span>
-                <br />
-                <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
-                <br />
-                Recibimos hasta las 3:00 P.M.
-              </p>
-            </div>
+            <p>
+              <span className="color-text-brand-orange font-bold">Sábados</span>
+              <br />
+              <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
+              <br />
+              Recibimos hasta las 3:00 P.M.
+            </p>
           </div>
         </div>
       </section>
 
       <Map />
-    </>
+    </div>
   )
 }

@@ -1,3 +1,9 @@
+.Home {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -74,7 +80,6 @@
 
   h2 {
     padding-top: 2rem;
-    font-size: 2.5rem;
   }
 
   h2,
@@ -190,6 +195,51 @@
 
 /* End Hotel Section */
 
+/* Play Day */
+
+.playday {
+  display: grid;
+  grid-column-gap: 45px;
+  grid-template-areas: 'picture info';
+  grid-template-columns: 1fr 1fr;
+
+  @media only screen and (max-width: 1000px) {
+    grid-template-areas:
+      'picture'
+      'info';
+    grid-template-rows: 410px 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.playdayPicture {
+  grid-area: picture;
+}
+
+.playdayInfo {
+  grid-area: info;
+
+  @media only screen and (min-width: 1000px) {
+    padding: 60px 0;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    padding: 20px 10px;
+  }
+
+  .playdayInfoInner {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .playdayPrice {
+    font-size: 2rem;
+  }
+}
+
+/* End Play Day */
+
 /* Grooming section */
 
 .grooming {
@@ -200,7 +250,7 @@
   color: var(--color-brand-black);
   transform: rotateZ(15deg);
   position: absolute;
-  left: calc(280px + (1rem - 16px) * 5);
+  left: calc(280px + (1rem - 16px) * 7);
   top: 100px;
 }
 
@@ -225,6 +275,7 @@
 }
 
 .groomingInfo {
+  overflow-x: hidden;
   position: relative;
   max-width: 800px;
   margin: 0 auto;
