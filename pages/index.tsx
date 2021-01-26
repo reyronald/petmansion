@@ -68,17 +68,17 @@ export default function Home() {
             </a>
 
             <a
-              href="https://forms.gle/XiD93JvoSrSrKvQa6"
-              className={buttonStyles.button}
-            >
-              Reservas de peluquería
-            </a>
-
-            <a
               href="https://forms.gle/tJTKJ6YDeFZNAj9Z6"
               className={buttonStyles.button}
             >
               Reservas de play day
+            </a>
+
+            <a
+              href="https://forms.gle/XiD93JvoSrSrKvQa6"
+              className={buttonStyles.button}
+            >
+              Reservas de peluquería
             </a>
           </div>
 
@@ -188,7 +188,7 @@ export default function Home() {
         <div className={styles.playdayPicture}>
           <Image
             src="/playday.jpg"
-            alt="área de juegos del hotel"
+            alt="joven jugando con perros"
             loading="lazy"
             layout="fill"
             objectFit="cover"
