@@ -12,7 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>My new cool app</title>
 
-        <title>Pet Mansion</title>
+        <title>
+          Pet Mansion - Hotel y peluquería para perros libre de jaulas
+        </title>
 
         <meta httpEquiv="x-ua-compatible" content="ie=edge"></meta>
         <meta name="application-name" content="Pet Mansion" />
