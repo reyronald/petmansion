@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
+import { Blurhash } from 'react-blurhash'
+
 import { Map } from '../components/Map'
 import { PawIcon } from '../components/PawIcon'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
@@ -248,6 +250,14 @@ export default function Home() {
 
       <section id="playday" className={styles.playday}>
         <div className={styles.playdayPicture}>
+          <Blurhash
+            hash={'LSG,I44Xxb%g.iMjR7S0Xfi{n7NF'}
+            width="100%"
+            height="100%"
+            resolutionX={32}
+            resolutionY={32}
+            punch={1}
+          />
           <Image
             src="/playday.jpg"
             alt="joven jugando con perros"
