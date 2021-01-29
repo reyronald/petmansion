@@ -84,13 +84,8 @@
 
   h2,
   div,
-  span,
   p {
     color: white;
-  }
-
-  a {
-    text-decoration: underline;
   }
 }
 
@@ -115,6 +110,7 @@
 
   @media only screen and (max-width: 1440px) {
     flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
@@ -154,7 +150,7 @@
     padding: 30px 20px;
   }
   @media only screen and (min-width: 710px) {
-    padding: 60px 0;
+    padding: 45px 0;
   }
 }
 
@@ -170,6 +166,17 @@
   @media only screen and (max-width: 710px) {
     padding-left: 20px;
   }
+
+  a {
+    text-decoration: none;
+    width: 296px;
+    font-size: 1rem;
+    margin: 20px auto;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .price {
@@ -181,11 +188,11 @@
   }
 
   .currency {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .priceBase {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .priceDecimals {
@@ -250,7 +257,7 @@
   color: var(--color-brand-black);
   transform: rotateZ(15deg);
   position: absolute;
-  left: calc(280px + (1rem - 16px) * 7);
+  left: calc(280px + (1rem - 16px) * 9);
   top: 100px;
 }
 

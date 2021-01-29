@@ -12,6 +12,10 @@ import buttonStyles from '../styles/Button.module.css'
 // TODO optimize fonts
 // TODO position svg paws absoolutely
 
+const newCustomersFormLink = 'https://forms.gle/8pfcA4dgqDtkomQQA'
+const hotelReservationLink = 'https://forms.gle/K59iqaBoRqP3ijA66'
+const playdayReservationLink = 'https://forms.gle/tJTKJ6YDeFZNAj9Z6'
+
 export default function Home() {
   return (
     <div className={styles.Home}>
@@ -50,27 +54,17 @@ export default function Home() {
               className={buttonStyles.button}
             >
               <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp
-              1-829-305-7334
             </a>
 
-            <a
-              href="https://forms.gle/8pfcA4dgqDtkomQQA"
-              className={buttonStyles.button}
-            >
+            <a href={newCustomersFormLink} className={buttonStyles.button}>
               Registro de nuevos clientes
             </a>
 
-            <a
-              href="https://forms.gle/K59iqaBoRqP3ijA66"
-              className={buttonStyles.button}
-            >
+            <a href={hotelReservationLink} className={buttonStyles.button}>
               Reservas de hotel
             </a>
 
-            <a
-              href="https://forms.gle/tJTKJ6YDeFZNAj9Z6"
-              className={buttonStyles.button}
-            >
+            <a href={playdayReservationLink} className={buttonStyles.button}>
               Reservas de play day
             </a>
 
@@ -105,26 +99,40 @@ export default function Home() {
 
         <div className={styles.hotelTextContainer}>
           <div className={styles.hotelTextFirst}>
-            <div>
+            <div className="text-center">
               <p>
-                <strong>Recepción y entrega</strong>
+                <strong className="font-bold">
+                  Horario de recepción y entrega
+                </strong>
               </p>
-              <ul>
-                <li>
-                  Lunes a Viernes{' '}
+
+              <div className="text-center">
+                <p>
+                  <span className="color-brand-green-bright  font-bold">
+                    Martes y Jueves
+                  </span>
+                  <br />
                   <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
-                </li>
-                <li>
-                  Sábados{' '}
+                </p>
+
+                <p>
+                  <span className="color-brand-green-bright  font-bold">
+                    Miércoles
+                  </span>
+                  <br />
+                  <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
+                  <br />
+                  Sólo para cachorros
+                </p>
+
+                <p>
+                  <span className="color-brand-green-bright  font-bold">
+                    Sábados
+                  </span>
+                  <br />
                   <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
-                </li>
-                <li>
-                  <strong className="font-bold">
-                    Domingos no hay recepción ni entrega. Sólo trabajamos de
-                    manera interna.
-                  </strong>
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
           </div>
 
@@ -135,9 +143,9 @@ export default function Home() {
           <div className={styles.hotlTextSecond}>
             <div>
               <p className="font-bold text-center">
-                En nuestro hotel, tu perro recibirá un trato familiar,
-                personalizado y libre de jaulas, procurándole ejercicios, juegos
-                y cariño diario con supervisión constante.
+                En nuestro hotel tu perro recibirá un trato familiar,
+                personalizado y 100% libre de jaulas, procurándole ejercicios,
+                juegos y cariño diario con supervisión constante.
               </p>
 
               <div className="text-center font-bold">
@@ -145,39 +153,96 @@ export default function Home() {
               </div>
               <div className={styles.price}>
                 <span className={styles.currency}>RD$</span>
-                <span className={styles.priceBase}>600</span>
-                <span className={styles.priceDecimals}>.00</span> por noche
+                <span className={styles.priceBase}>600</span> por noche
               </div>
 
               <p className="text-uppercase">
-                <strong>Incluye</strong>
+                <strong>Hospedaje Incluye</strong>
               </p>
-              <p className="text-center font-bold">
-                Hospedaje 100% libre de jaulas con supervisión constante,
-                juegos, cariño, fotos, trato personalizado y mucho más.
+
+              <ul>
+                <li>Hospedaje 100% libre de jaulas.</li>
+                <li>Agua potable y fresca permanente.</li>
+                <li>
+                  Derecho al área de juego con aproximadamente 120 m<sup>2</sup>{' '}
+                  asegurado con altas paredes y divisiones internas para la
+                  seguridad de su mascota, casitas de descanso y áreas
+                  naturales.
+                </li>
+                <li>
+                  Techo con protección UV para proteger de la lluvia y exceso de
+                  sol.
+                </li>
+                <li>
+                  Abanicos Industriales para mantener fresca y ventilada en el
+                  área de juegos.
+                </li>
+                <li>Trabajo de integración y sociabilización con la manada.</li>
+                <li>Supervisión constante.</li>
+                <li>Derecho al uso de piscina (cuando aplique).</li>
+                <li>
+                  Derecho a la utilización de todos los juegos para diversión y
+                  estimulación mental.
+                </li>
+                <li>
+                  Accesorios para la utilización durante su estadía (platos,
+                  camas, meriendas, entre otros).
+                </li>
+                <li>
+                  Medicamentos de primeros auxilios en caso de ser necesario.
+                </li>
+                <li>Y sobre todo mucho cariño y atención.</li>
+              </ul>
+
+              <p className="text-uppercase">
+                <strong>Pasos para reservar</strong>
               </p>
+              <ul className={styles.requirementsList}>
+                <li>
+                  Si es tu primera visita, debes llenar tu ficha de cliente,
+                  aquí:
+                  <a
+                    href={newCustomersFormLink}
+                    className={buttonStyles.button}
+                  >
+                    Registro de nuevos clientes
+                  </a>
+                  Si ya llenaste el formulario, continua al próximo paso.
+                </li>
+
+                <li>
+                  Luego llenar el formulario de solicitud de reserva, aquí:
+                  <a
+                    href={hotelReservationLink}
+                    className={buttonStyles.button}
+                  >
+                    Reservas de hotel
+                  </a>
+                </li>
+
+                <li>
+                  Espera tu confirmación de reserva vía correo o{' '}
+                  <span className="inline-block">
+                    <WhatsAppIcon height={16} /> WhatsApp.
+                  </span>
+                </li>
+              </ul>
 
               <p className="text-uppercase">
                 <strong>Requisitos</strong>
               </p>
-              <ul className={styles.requirementsList}>
+              <ul>
                 <li>
-                  Hacer reserva con un mínimo de 24 horas de antelación via{' '}
-                  <WhatsAppIcon height={16} /> WhatsApp al{' '}
-                  <a
-                    href="https://api.whatsapp.com/send?phone=18293057334"
-                    className="font-bold"
-                  >
-                    1-829-305-7334
-                  </a>
+                  Solo perritos pequeños y medianos de hasta 23 libras
+                  aproximadamente.
                 </li>
                 <li>
-                  Record de vacunas al día (quintuple, rabia y bordetella)
+                  Record de vacunas al día (qu¡ntuple, rabia y bordetella)
                 </li>
                 <li>Vermífugo al día</li>
                 <li>No aceptamos hembras en celo</li>
                 <li>Nexgard para evitar pulgas y garrapatas</li>
-                <li>Traer comida</li>
+                <li>Traer su comida</li>
               </ul>
             </div>
           </div>
@@ -213,67 +278,73 @@ export default function Home() {
             </p>
 
             <p>
-              <strong className="font-bold text-uppercase">Incluye</strong>
-            </p>
-
-            <ul>
-              <li>Agua potable y fresca siempre.</li>
-              <li>
-                Área de juego asegurada con altas paredes y divisiones internas
-                para la seguridad de su mascota.
-              </li>
-              <li>Techo con protección UV.</li>
-              <li>Abanicos industriales para la ventilación.</li>
-              <li>
-                Trabajo de integración y socialización con la manada y juegos de
-                estimulación mental.
-              </li>
-              <li>Supervisión constante.</li>
-              <li>
-                Accesorios para la utilización durante su estadía (platos,
-                camas, meriendas, entre otros).
-              </li>
-              <li>Y sobre todo mucho cariño y atención.</li>
-            </ul>
-
-            <p>
               <strong className="font-bold text-uppercase">Requisitos</strong>
             </p>
 
             <ul>
               <li>Sólo para perros menores a 20 libras</li>
-              <li>Preventivo para pulgas y garrapatas</li>
+              <li>No aceptamos hembras en celo</li>
             </ul>
 
             <p className={`${styles.playdayPrice} text-center`}>
-              <strong className="font-bold">RD$300.00</strong>
+              <strong className="font-bold">RD$300</strong>
             </p>
 
-            <div className="text-center">
-              <p>
-                <span className="color-text-brand-orange font-bold">
-                  Martes y Jueves
+            <p className="text-uppercase">
+              <strong>Pasos para reservar</strong>
+            </p>
+            <ul className={styles.requirementsList}>
+              <li>
+                Si es tu primera visita, debes llenar tu ficha de cliente, aquí:
+                <a href={newCustomersFormLink} className={buttonStyles.button}>
+                  Registro de nuevos clientes
+                </a>
+                Si ya llenaste el formulario, continua al próximo paso.
+              </li>
+
+              <li>
+                Luego llenar el formulario de solicitud de reserva, aquí:
+                <a
+                  href={playdayReservationLink}
+                  className={buttonStyles.button}
+                >
+                  Reservas de play day
+                </a>
+              </li>
+
+              <li>
+                Espera tu confirmación de reserva vía correo o{' '}
+                <span className="inline-block">
+                  <WhatsAppIcon height={16} /> WhatsApp.
                 </span>
+              </li>
+            </ul>
+
+            <div className="text-center">
+              <p className="font-bold">
+                <span className="color-text-brand-orange">Martes y Jueves</span>
                 <br />
-                <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
+                Recibimos a partir de las 8:00 A.M. hasta las 11:00 A.M.
+                <br />
+                Entregamos hasta las 6:00 PM.
               </p>
 
-              <p>
-                <span className="color-text-brand-orange font-bold">
-                  Miércoles
-                </span>
+              <p className="font-bold">
+                <span className="color-text-brand-orange">Miércoles</span>
                 <br />
-                <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
+                Recibimos a partir de las 8:00 A.M. hasta las 11:00 A.M.
+                <br />
+                Entregamos hasta las 6:00 PM.
                 <br />
                 Sólo para cachorros
               </p>
 
-              <p>
-                <span className="color-text-brand-orange font-bold">
-                  Sábados
-                </span>
+              <p className="font-bold">
+                <span className="color-text-brand-orange">Sábados</span>
                 <br />
-                <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
+                Recibimos a partir de las 9:00 A.M. hasta las 11:00 A.M.
+                <br />
+                Entregamos hasta las 4:00 PM.
               </p>
             </div>
           </div>
@@ -387,7 +458,7 @@ export default function Home() {
                 Lunes a Viernes
               </span>
               <br />
-              <strong className="font-bold">9:00 A.M. a 6:00 P.M.</strong>
+              <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
               <br />
               Recibimos hasta las 4:00 P.M.
             </p>
@@ -397,11 +468,33 @@ export default function Home() {
               <br />
               <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
               <br />
-              Recibimos hasta las 3:00 P.M.
+              Recibimos hasta las 2:30 P.M.
+            </p>
+
+            <p>
+              <span className="color-text-brand-orange font-bold">
+                Domingos
+              </span>
+              <br />
+              <strong className="font-bold">Cerrados.</strong>
+              <br />
+              Sólo trabajabmos de manera interna.
             </p>
           </div>
         </div>
       </section>
+
+      <a
+        href="https://instagram.com/petmansion"
+        className={buttonStyles.button}
+        style={{
+          minWidth: '18.75rem',
+          width: 'fit-content',
+          margin: '40px auto',
+        }}
+      >
+        <InstagramIcon style={{ marginRight: 7 }} /> @petmansion
+      </a>
 
       <Map />
     </div>
