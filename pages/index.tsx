@@ -109,28 +109,31 @@ export default function Home() {
               <div className="text-center">
                 <p>
                   <span className="color-brand-green-bright  font-bold">
-                    Martes y Jueves
+                    Lunes a Viernes
                   </span>
                   <br />
                   <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
                 </p>
 
                 <p>
-                  <span className="color-brand-green-bright  font-bold">
-                    Miércoles
+                  <span className="color-brand-green-bright font-bold">
+                    Sábados
                   </span>
                   <br />
-                  <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
+                  <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
                   <br />
                   Sólo para cachorros
                 </p>
 
                 <p>
                   <span className="color-brand-green-bright  font-bold">
-                    Sábados
+                    Domingos
                   </span>
                   <br />
-                  <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
+                  <strong className="font-bold">Cerrados.</strong>
+                  <br />
+                  No hay recepción ni entrega, solo trabajamos de manera
+                  interna.
                 </p>
               </div>
             </div>
@@ -147,14 +150,6 @@ export default function Home() {
                 personalizado y 100% libre de jaulas, procurándole ejercicios,
                 juegos y cariño diario con supervisión constante.
               </p>
-
-              <div className="text-center font-bold">
-                Perros hasta 20 libras
-              </div>
-              <div className={styles.price}>
-                <span className={styles.currency}>RD$</span>
-                <span className={styles.priceBase}>600</span> por noche
-              </div>
 
               <p className="text-uppercase">
                 <strong>Hospedaje Incluye</strong>
@@ -193,6 +188,14 @@ export default function Home() {
                 </li>
                 <li>Y sobre todo mucho cariño y atención.</li>
               </ul>
+
+              <div className="text-center font-bold">
+                Perros hasta 20 libras
+              </div>
+              <div className={styles.price}>
+                <span className={styles.currency}>RD$</span>
+                <span className={styles.priceBase}>600</span> por noche
+              </div>
 
               <p className="text-uppercase">
                 <strong>Pasos para reservar</strong>
