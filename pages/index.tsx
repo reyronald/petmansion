@@ -15,6 +15,7 @@ import buttonStyles from '../styles/Button.module.css'
 const newCustomersFormLink = 'https://forms.gle/8pfcA4dgqDtkomQQA'
 const hotelReservationLink = 'https://forms.gle/K59iqaBoRqP3ijA66'
 const playdayReservationLink = 'https://forms.gle/tJTKJ6YDeFZNAj9Z6'
+const groomingRevervationLink = 'https://forms.gle/XiD93JvoSrSrKvQa6'
 
 export default function Home() {
   return (
@@ -68,10 +69,7 @@ export default function Home() {
               Reservas de play day
             </a>
 
-            <a
-              href="https://forms.gle/XiD93JvoSrSrKvQa6"
-              className={buttonStyles.button}
-            >
+            <a href={groomingRevervationLink} className={buttonStyles.button}>
               Reservas de peluquería
             </a>
           </div>
@@ -236,11 +234,11 @@ export default function Home() {
               </p>
               <ul>
                 <li>
-                  Solo perritos pequeños y medianos de hasta 23 libras
+                  Solo perritos pequeños y medianos de hasta 20 libras
                   aproximadamente.
                 </li>
                 <li>
-                  Record de vacunas al día (qu¡ntuple, rabia y bordetella)
+                  Record de vacunas al día (quíntuple, rabia y bordetella)
                 </li>
                 <li>Vermífugo al día</li>
                 <li>No aceptamos hembras en celo</li>
@@ -483,6 +481,17 @@ export default function Home() {
               <br />
               Sólo trabajabmos de manera interna.
             </p>
+
+            <div>
+              <p>Para hacer tu cita de baño o peluquería, click aquí:</p>
+
+              <a
+                href={groomingRevervationLink}
+                className={`${buttonStyles.button} center-x`}
+              >
+                Reservas de peluquería
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -491,8 +500,6 @@ export default function Home() {
         href="https://instagram.com/petmansion"
         className={buttonStyles.button}
         style={{
-          minWidth: '18.75rem',
-          width: 'fit-content',
           margin: '40px auto',
         }}
       >
