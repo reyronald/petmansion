@@ -119,8 +119,6 @@ export default function Home() {
                   </span>
                   <br />
                   <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
-                  <br />
-                  Sólo para cachorros
                 </p>
 
                 <p>
@@ -187,9 +185,7 @@ export default function Home() {
                 <li>Y sobre todo mucho cariño y atención.</li>
               </ul>
 
-              <div className="text-center font-bold">
-                Perros hasta 20 libras
-              </div>
+              <p className="text-center font-bold">Perros hasta 20 libras</p>
               <div className={styles.price}>
                 <span className={styles.currency}>RD$</span>
                 <span className={styles.priceBase}>600</span> por noche
@@ -285,6 +281,7 @@ export default function Home() {
             <ul>
               <li>Sólo para perros menores a 20 libras</li>
               <li>No aceptamos hembras en celo</li>
+              <li>Record de vacunas al día (quíntuple, rabia y bordetella)</li>
             </ul>
 
             <p className={`${styles.playdayPrice} text-center`}>

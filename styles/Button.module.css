@@ -9,6 +9,5 @@
   align-items: center;
   justify-content: center;
   min-height: 50px;
-  min-width: 18.75rem;
-  width: fit-content;
+  max-width: 296px;
 }
