@@ -14,7 +14,7 @@
 }
 
 .main {
-  @media only screen and (max-height: 720px) {
+  @media only screen and (max-height: 1056px) {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
