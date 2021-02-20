@@ -32,16 +32,17 @@ export default function Home() {
               loading="eager"
               width={300}
               height={300}
+              itemProp="logo"
             />
           </div>
-          <h1 className={`font-brand ${styles.title}`}>
+          <h1 className={`font-brand ${styles.title}`} itemProp="name">
             <span className="color-text">Pet</span>
             <span className="color-text-brand-green">Mansion</span>
           </h1>
 
-          <p className={styles.description}>
+          <p className={styles.description} itemProp="description">
             Hotel y peluquería para perros libre de jaulas en Santo Domingo,
-            República Dominicana
+            República Dominicana (R.D.)
           </p>
 
           <div className={styles.links}>
@@ -76,11 +77,11 @@ export default function Home() {
             </a>
           </div>
 
-          <p className={styles.description}>
+          <address className={styles.description} itemProp="address">
             Calle Angel Severo Cabral No. 63, Urb. Fernández,
             <br />
             Santo Domingo, República Dominicana
-          </p>
+          </address>
         </main>
       </div>
 
