@@ -22,6 +22,7 @@ class MyDocument extends Document {
         dir="ltr"
         itemScope
         // https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype
+        // https://search.google.com/test/rich-results?utm_campaign=sdtt&utm_medium=message
         itemType="https://schema.org/LocalBusiness"
       >
         <Head />

@@ -36,7 +36,7 @@ export default function Home() {
             />
           </div>
           <h1 className={`font-brand ${styles.title}`} itemProp="name">
-            <span className="color-text">Pet</span>
+            <span className="color-text">Pet</span>{' '}
             <span className="color-text-brand-green">Mansion</span>
           </h1>
 
@@ -78,9 +78,13 @@ export default function Home() {
           </div>
 
           <address className={styles.description} itemProp="address">
-            Calle Angel Severo Cabral No. 63, Urb. Fernández,
+            <span itemProp="streetAddress">
+              Calle Angel Severo Cabral No. 63, Urb. Fernández,
+            </span>
             <br />
-            Santo Domingo, República Dominicana
+            <span itemProp="addressLocality">
+              Santo Domingo, República Dominicana
+            </span>
           </address>
         </main>
       </div>
@@ -93,6 +97,7 @@ export default function Home() {
             loading="lazy"
             layout="fill"
             objectFit="cover"
+            itemProp="image"
           />
         </div>
 
