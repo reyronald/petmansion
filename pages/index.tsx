@@ -97,8 +97,8 @@ export default function Home() {
             loading="lazy"
             layout="fill"
             objectFit="cover"
-            itemProp="image"
           />
+          <link itemProp="image" href="/play-area.jpg"></link>
         </div>
 
         <h2 className="text-center">Hotel</h2>
