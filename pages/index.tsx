@@ -98,7 +98,10 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
           />
-          <link itemProp="image" href="/play-area.jpg"></link>
+          <link
+            itemProp="image"
+            href="https://petmansion-git-better-seo.reyronald.vercel.app/play-area.jpg"
+          ></link>
         </div>
 
         <h2 className="text-center">Hotel</h2>
