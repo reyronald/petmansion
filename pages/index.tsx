@@ -301,9 +301,15 @@ export default function Home() {
               <li>Record de vacunas al día (quíntuple, rabia y bordetella)</li>
             </ul>
 
-            <p className={`${styles.playdayPrice} text-center`}>
-              <strong className="font-bold">RD$300</strong>
-            </p>
+            <div itemScope itemType="http://schema.org/Offer" itemProp="offers">
+              <meta itemProp="priceCurrency" content="DOP" />
+              <p className={`${styles.playdayPrice} text-center`}>
+                <strong className="font-bold">
+                  <span>RD$</span>
+                  <span itemProp="price">300</span>
+                </strong>
+              </p>
+            </div>
 
             <p className="text-uppercase">
               <strong>Pasos para reservar</strong>

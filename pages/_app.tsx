@@ -38,6 +38,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:card" content="summary" />
 
         <link rel="icon" href="/branding/dog face small.ico" />
+
+        <meta itemProp="telephone" content="(829) 305-7334" />
+        <meta itemProp="priceRange" content="$" />
       </Head>
       <Component {...pageProps} />
     </>
