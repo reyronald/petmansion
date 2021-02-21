@@ -25,6 +25,7 @@ export default function Home() {
       <div className={styles.container}>
         <main className={styles.main}>
           <div className={styles.logo}>
+            <link itemProp="url" href="https://petmansion.com.do/" />
             <Image
               priority
               src="/branding/logo-petmansion-circle-transparent.png"
@@ -32,16 +33,17 @@ export default function Home() {
               loading="eager"
               width={300}
               height={300}
+              itemProp="logo"
             />
           </div>
-          <h1 className={`font-brand ${styles.title}`}>
-            <span className="color-text">Pet</span>
+          <h1 className={`font-brand ${styles.title}`} itemProp="name">
+            <span className="color-text">Pet</span>{' '}
             <span className="color-text-brand-green">Mansion</span>
           </h1>
 
-          <p className={styles.description}>
+          <p className={styles.description} itemProp="description">
             Hotel y peluquería para perros libre de jaulas en Santo Domingo,
-            República Dominicana
+            República Dominicana (R.D.)
           </p>
 
           <div className={styles.links}>
@@ -76,11 +78,15 @@ export default function Home() {
             </a>
           </div>
 
-          <p className={styles.description}>
-            Calle Angel Severo Cabral No. 63, Urb. Fernández,
+          <address className={styles.description} itemProp="address">
+            <span itemProp="streetAddress">
+              Calle Angel Severo Cabral No. 63, Urb. Fernández,
+            </span>
             <br />
-            Santo Domingo, República Dominicana
-          </p>
+            <span itemProp="addressLocality">
+              Santo Domingo, República Dominicana
+            </span>
+          </address>
         </main>
       </div>
 
@@ -93,6 +99,7 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
           />
+          <link itemProp="image" href="/play-area.jpg"></link>
         </div>
 
         <h2 className="text-center">Hotel</h2>
@@ -294,9 +301,15 @@ export default function Home() {
               <li>Record de vacunas al día (quíntuple, rabia y bordetella)</li>
             </ul>
 
-            <p className={`${styles.playdayPrice} text-center`}>
-              <strong className="font-bold">RD$300</strong>
-            </p>
+            <div itemScope itemType="http://schema.org/Offer" itemProp="offers">
+              <meta itemProp="priceCurrency" content="DOP" />
+              <p className={`${styles.playdayPrice} text-center`}>
+                <strong className="font-bold">
+                  <span>RD$</span>
+                  <span itemProp="price">300</span>
+                </strong>
+              </p>
+            </div>
 
             <p className="text-uppercase">
               <strong>Pasos para reservar</strong>
