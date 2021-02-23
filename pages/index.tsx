@@ -76,6 +76,15 @@ export default function Home() {
             <a href={groomingRevervationLink} className={buttonStyles.button}>
               Reservas de peluquería
             </a>
+
+            <a
+              href={
+                'https://docs.google.com/forms/d/1MDzfAJOb6QJTwFSjfJe1q58W8kG3SfZvRWUUfSnJgSY/edit'
+              }
+              className={buttonStyles.button}
+            >
+              Solicitud de Adopciones
+            </a>
           </div>
 
           <address className={styles.description} itemProp="address">
