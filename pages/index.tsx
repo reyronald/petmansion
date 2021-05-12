@@ -14,10 +14,7 @@ import buttonStyles from '../styles/Button.module.css'
 // TODO optimize fonts
 // TODO position svg paws absoolutely
 
-const newCustomersFormLink = 'https://forms.gle/8pfcA4dgqDtkomQQA'
-const hotelReservationLink = 'https://forms.gle/K59iqaBoRqP3ijA66'
-const playdayReservationLink = 'https://forms.gle/tJTKJ6YDeFZNAj9Z6'
-const groomingRevervationLink = 'https://forms.gle/XiD93JvoSrSrKvQa6'
+const rvspHereLink = 'https://forms.gle/Hjpnr5Z1ngdY5rRv8'
 
 export default function Home() {
   return (
@@ -48,33 +45,21 @@ export default function Home() {
 
           <div className={styles.links}>
             <a
-              href="https://instagram.com/petmansion"
-              className={buttonStyles.button}
-            >
-              <InstagramIcon style={{ marginRight: 7 }} /> @petmansion
-            </a>
-
-            <a
               href="https://api.whatsapp.com/send?phone=18293057334"
               className={buttonStyles.button}
             >
               <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp
             </a>
 
-            <a href={newCustomersFormLink} className={buttonStyles.button}>
-              Registro de nuevos clientes
+            <a href={rvspHereLink} className={buttonStyles.button}>
+              Reserva aquí
             </a>
 
-            <a href={hotelReservationLink} className={buttonStyles.button}>
-              Reservas de hotel
-            </a>
-
-            <a href={playdayReservationLink} className={buttonStyles.button}>
-              Reservas de play day
-            </a>
-
-            <a href={groomingRevervationLink} className={buttonStyles.button}>
-              Reservas de peluquería
+            <a
+              href="https://instagram.com/petmansion"
+              className={buttonStyles.button}
+            >
+              <InstagramIcon style={{ marginRight: 7 }} /> @petmansion
             </a>
 
             <a
@@ -209,39 +194,14 @@ export default function Home() {
                 <span className={styles.priceBase}>600</span> por noche
               </div>
 
-              <p className="text-uppercase">
-                <strong>Pasos para reservar</strong>
+              <p>
+                <a
+                  href={rvspHereLink}
+                  className={`${buttonStyles.button} center-x`}
+                >
+                  Reserva aquí
+                </a>
               </p>
-              <ul className={styles.requirementsList}>
-                <li>
-                  Si es tu primera visita, debes llenar tu ficha de cliente,
-                  aquí:
-                  <a
-                    href={newCustomersFormLink}
-                    className={buttonStyles.button}
-                  >
-                    Registro de nuevos clientes
-                  </a>
-                  Si ya llenaste el formulario, continua al próximo paso.
-                </li>
-
-                <li>
-                  Luego llenar el formulario de solicitud de reserva, aquí:
-                  <a
-                    href={hotelReservationLink}
-                    className={buttonStyles.button}
-                  >
-                    Reservas de hotel
-                  </a>
-                </li>
-
-                <li>
-                  Espera tu confirmación de reserva vía correo o{' '}
-                  <span className="inline-block">
-                    <WhatsAppIcon height={16} /> WhatsApp.
-                  </span>
-                </li>
-              </ul>
 
               <p className="text-uppercase">
                 <strong>Requisitos</strong>
@@ -320,35 +280,14 @@ export default function Home() {
               </p>
             </div>
 
-            <p className="text-uppercase">
-              <strong>Pasos para reservar</strong>
+            <p>
+              <a
+                href={rvspHereLink}
+                className={`${buttonStyles.button} center-x`}
+              >
+                Reserva aquí
+              </a>
             </p>
-            <ul className={styles.requirementsList}>
-              <li>
-                Si es tu primera visita, debes llenar tu ficha de cliente, aquí:
-                <a href={newCustomersFormLink} className={buttonStyles.button}>
-                  Registro de nuevos clientes
-                </a>
-                Si ya llenaste el formulario, continua al próximo paso.
-              </li>
-
-              <li>
-                Luego llenar el formulario de solicitud de reserva, aquí:
-                <a
-                  href={playdayReservationLink}
-                  className={buttonStyles.button}
-                >
-                  Reservas de play day
-                </a>
-              </li>
-
-              <li>
-                Espera tu confirmación de reserva vía correo o{' '}
-                <span className="inline-block">
-                  <WhatsAppIcon height={16} /> WhatsApp.
-                </span>
-              </li>
-            </ul>
 
             <div className="text-center">
               <p className="font-bold">
@@ -515,7 +454,7 @@ export default function Home() {
               <p>Para hacer tu cita de baño o peluquería, click aquí:</p>
 
               <a
-                href={groomingRevervationLink}
+                href={rvspHereLink}
                 className={`${buttonStyles.button} center-x`}
               >
                 Reservas de peluquería
