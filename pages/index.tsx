@@ -48,7 +48,15 @@ export default function Home() {
               href="https://api.whatsapp.com/send?phone=18293057334"
               className={buttonStyles.button}
             >
-              <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp
+              <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp Hotel
+            </a>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=18299627334"
+              className={buttonStyles.button}
+            >
+              <WhatsAppIcon style={{ marginRight: 7, minWidth: 24 }} /> Pide la
+              comida de tu mascota AQUI
             </a>
 
             <a href={rvspHereLink} className={buttonStyles.button}>
