@@ -48,7 +48,7 @@ export default function Home() {
               href="https://api.whatsapp.com/send?phone=18293057334"
               className={buttonStyles.button}
             >
-              <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp
+              <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp Hotel
             </a>
 
             <a
