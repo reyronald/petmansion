@@ -51,6 +51,14 @@ export default function Home() {
               <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp
             </a>
 
+            <a
+              href="https://api.whatsapp.com/send?phone=18299627334"
+              className={buttonStyles.button}
+            >
+              <WhatsAppIcon style={{ marginRight: 7, minWidth: 24 }} /> Pide la
+              comida de tu mascota AQUI
+            </a>
+
             <a href={rvspHereLink} className={buttonStyles.button}>
               Reserva aquí
             </a>
