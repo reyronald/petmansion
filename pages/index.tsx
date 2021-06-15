@@ -224,7 +224,7 @@ export default function Home() {
                 </li>
                 <li>Vermífugo al día</li>
                 <li>No aceptamos hembras en celo</li>
-                <li>Nexgard para evitar pulgas y garrapatas</li>
+                <li>Preventivo para pulgas y garrapatas</li>
                 <li>Traer su comida</li>
               </ul>
             </div>
