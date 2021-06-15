@@ -199,7 +199,7 @@ export default function Home() {
               <p className="text-center font-bold">Perros hasta 20 libras</p>
               <div className={styles.price}>
                 <span className={styles.currency}>RD$</span>
-                <span className={styles.priceBase}>600</span> por noche
+                <span className={styles.priceBase}>750</span> por noche
               </div>
 
               <p>
@@ -283,10 +283,19 @@ export default function Home() {
               <p className={`${styles.playdayPrice} text-center`}>
                 <strong className="font-bold">
                   <span>RD$</span>
-                  <span itemProp="price">300</span>
+                  <span itemProp="price">400</span> por dia
                 </strong>
               </p>
             </div>
+
+            <ul>
+              <li>
+                Paquete de 4 visitas <strong>RD$1,500</strong>
+              </li>
+              <li>
+                Paquete de 8 visitas <strong>RD$2,800</strong>
+              </li>
+            </ul>
 
             <p>
               <a
@@ -341,51 +350,49 @@ export default function Home() {
           </div>
 
           <div className={styles.groomingTiers}>
-            <div>
-              <h3>Baño Regular</h3>
+            <h3>Baños</h3>
 
-              <ul>
-                <li>
-                  1-10 libras <strong className="font-bold">RD$350</strong>
-                </li>
-                <li>
-                  11-20 libras <strong className="font-bold">RD$450</strong>
-                </li>
-              </ul>
+            <ul>
+              <li>
+                Baño Regular <strong>RD$490</strong>
+                <br />
+                Baño, secado, colonia y adorno.
+              </li>
 
-              <p>Baño, secado y colonia.</p>
-            </div>
+              <li>
+                Baño Deluxe <strong>RD$690</strong>
+                <br />
+                Baño, secado, corte de uñas, limpieza de oído, cepillado dental,
+                vaciado perianal, colonia, adorno.
+              </li>
+            </ul>
 
-            <div>
-              <h3>Baño Deluxe</h3>
+            <h3>Peluquería</h3>
 
-              <ul>
-                <li>
-                  1-20 libras <strong className="font-bold">RD$600</strong>
-                </li>
-              </ul>
+            <ul>
+              <li>
+                Peluquería Premium <strong> RD$990</strong>
+                <br />
+                Incluye: Baño Deluxe + recorte Área del Bikini + Carita +
+                Patitas
+              </li>
 
-              <p>
-                Baño, secado, acondicionador, leave-in, corte de uñas, limpieza
-                de oído, cepillado dental, vaciado perianal y colonia.
-              </p>
-            </div>
+              <li>
+                Peluquería Premium Especial
+                <strong> RD$1,150</strong>
+                <br />
+                Incluye: Baño Deluxe + Corte especializado de raza y/o corte
+                bajo
+              </li>
+            </ul>
 
-            <div>
-              <h3>Baño Premium</h3>
+            <h3>Deslanado</h3>
 
-              <ul>
-                <li>
-                  1-20 libras <strong className="font-bold">RD$850</strong>
-                </li>
-              </ul>
-
-              <p>
-                Baño, secado, acondicionador, leave-in, corte de uñas, limpieza
-                de oído, cepillado dental, vaciado perianal, recorte de patas,
-                carita, área de bikini, colonia y bufanda.
-              </p>
-            </div>
+            <ul>
+              <li>
+                Baño de su eleccón + <strong>RD$500</strong>
+              </li>
+            </ul>
           </div>
 
           <div className={styles.groomingAdditionals}>
@@ -394,36 +401,21 @@ export default function Home() {
 
               <ul>
                 <li>
-                  Baño con línea <strong className="font-bold">+RD$150</strong>
+                  Baño con línea <strong className="font-bold">+ RD$175</strong>
                   <ul>
                     <li>Anti-caida de pelo con línea Shed-X</li>
-                    <li>Shampoo de avena con línea Walsh</li>
+                    <li>Shampoo hidratante con línea Walsh</li>
                   </ul>
                 </li>
 
                 <li>
-                  Baño Medicado <strong className="font-bold">+RD$150</strong>
+                  Baño Medicado <strong className="font-bold">+ RD$175</strong>
                   <br />
                   Shampoo de clorexidina o con azufre.
                 </li>
 
                 <li>
-                  Bufanda de muecas{' '}
-                  <strong className="font-bold">+RD$350</strong>
-                </li>
-                <li>
-                  Solo corte de uñas{' '}
-                  <strong className="font-bold">+RD$150</strong>
-                </li>
-                <li>
-                  Corte bajo <strong className="font-bold">+RD$400</strong>
-                </li>
-                <li>
-                  Corte especializado{' '}
-                  <strong className="font-bold">+RD$500</strong>
-                </li>
-                <li>
-                  Deslanado <strong className="font-bold">+RD$500</strong>
+                  Corte de uñas <strong className="font-bold">+ RD$175</strong>
                 </li>
               </ul>
             </div>
