@@ -13,8 +13,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>My new cool app</title>
-
         <title>
           Pet Mansion - Hotel y peluquería para perros libre de jaulas
         </title>

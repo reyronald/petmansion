@@ -52,11 +52,10 @@ export default function Home() {
             </a>
 
             <a
-              href="https://api.whatsapp.com/send?phone=18299627334"
+              href="https://docs.google.com/forms/d/15Gx0-hDGLh9FuSpvtvFPHB6jk4QL8J8J-v37eLiubhY/edit"
               className={buttonStyles.button}
             >
-              <WhatsAppIcon style={{ marginRight: 7, minWidth: 24 }} /> Pide la
-              comida de tu mascota AQUI
+              Pide la comida de tu mascota AQUI
             </a>
 
             <a href={rvspHereLink} className={buttonStyles.button}>
