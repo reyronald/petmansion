@@ -21,22 +21,16 @@ export default function Home() {
     <div className={styles.Home}>
       <div className={styles.container}>
         <main className={styles.main}>
-          <div className={styles.logo}>
-            <link itemProp="url" href="https://petmansion.com.do/" />
-            <Image
-              priority
-              src="/branding/logo-petmansion-circle-transparent.png"
-              alt="logo"
-              loading="eager"
-              width={300}
-              height={300}
-              itemProp="logo"
-            />
-          </div>
-          <h1 className={`font-brand ${styles.title}`} itemProp="name">
-            <span className="color-text">Pet</span>{' '}
-            <span className="color-text-brand-green">Mansion</span>
-          </h1>
+          <link itemProp="url" href="https://petmansion.com.do/" />
+          <Image
+            priority
+            src="/branding/logo-petmansion-2.png"
+            alt="logo"
+            loading="eager"
+            width={367}
+            height={407}
+            itemProp="logo"
+          />
 
           <p className={styles.description} itemProp="description">
             Hotel y peluquería para perros libre de jaulas en Santo Domingo,
