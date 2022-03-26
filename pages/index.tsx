@@ -45,10 +45,7 @@ export default function Home() {
               <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp Hotel
             </a>
 
-            <a
-              href="https://docs.google.com/forms/d/15Gx0-hDGLh9FuSpvtvFPHB6jk4QL8J8J-v37eLiubhY/edit"
-              className={buttonStyles.button}
-            >
+            <a href="https://wa.link/6i8srm" className={buttonStyles.button}>
               Pide la comida de tu mascota AQUI
             </a>
 
@@ -306,16 +303,6 @@ export default function Home() {
                 Recibimos a partir de las 8:00 A.M. hasta las 11:00 A.M.
                 <br />
                 Entregamos hasta las 6:00 PM.
-              </p>
-
-              <p className="font-bold">
-                <span className="color-text-brand-orange">Miércoles</span>
-                <br />
-                Recibimos a partir de las 8:00 A.M. hasta las 11:00 A.M.
-                <br />
-                Entregamos hasta las 6:00 PM.
-                <br />
-                Sólo para cachorros
               </p>
 
               <p className="font-bold">
