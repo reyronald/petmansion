@@ -1,9 +1,11 @@
 import { GetServerSideProps, NextPage } from 'next'
 import HeadWithCartItemAmount from '../../components/HeadWithCartItemAmount'
 import { contentfulClient } from '../../services/contentfulClient'
-import { Cart, Product } from '../../types'
+import { Product } from '../../types'
 import * as contentful from 'contentful'
-import { CART_KEY } from '../../utils/writeToCart'
+import Link from 'next/link'
+import { getCartFromCookies } from '../../utils/getCartFromCookies'
+import { formatPrice } from '../../utils/formatPrice'
 
 type Props = {
   entries: contentful.EntryCollection<Product>
@@ -13,17 +15,7 @@ type Props = {
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context,
 ) => {
-  const cartCookieValue: undefined | string = context.req.cookies[CART_KEY]
-  // TODO do a safe json parse here
-  const cart: Cart = cartCookieValue ? JSON.parse(cartCookieValue) : []
-
-  const entries = await contentfulClient.getEntries<Product>({
-    'content_type': 'product',
-    'sys.id[in]': cart.map(([id]) => id).join(),
-  })
-
-  const quantities = Object.fromEntries(cart)
-
+  const { entries, quantities } = await getCartFromCookies(context)
   return { props: { entries, quantities } }
 }
 
@@ -49,13 +41,17 @@ const Carrito: NextPage<Props> = ({ entries, quantities }) => {
               <tr key={product.sys.id}>
                 <td>{product.fields.name}</td>
                 <td>{quantity}</td>
-                <td>{product.fields.price}</td>
-                <td>{product.fields.price * quantity}</td>
+                <td>{formatPrice(product.fields.price)}</td>
+                <td>{formatPrice(product.fields.price * quantity)}</td>
               </tr>
             )
           })}
         </tbody>
       </table>
+
+      <Link href="/checkout">
+        <a>Proceder con la compra</a>
+      </Link>
     </>
   )
 }
