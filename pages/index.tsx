@@ -33,8 +33,8 @@ export default function Home() {
           />
 
           <p className={styles.description} itemProp="description">
-            Hotel y peluquería para perros libre de jaulas en Santo Domingo,
-            República Dominicana (R.D.)
+            Hotel y peluquería para perros en Santo Domingo, República
+            Dominicana (R.D.)
           </p>
 
           <div className={styles.links}>
@@ -42,7 +42,7 @@ export default function Home() {
               href="https://api.whatsapp.com/send?phone=18293057334"
               className={buttonStyles.button}
             >
-              <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp Hotel
+              <WhatsAppIcon style={{ marginRight: 7 }} /> WhatsApp
             </a>
 
             <a href="https://wa.link/6i8srm" className={buttonStyles.button}>
@@ -108,10 +108,22 @@ export default function Home() {
               <div className="text-center">
                 <p>
                   <span className="color-brand-green-bright  font-bold">
-                    Lunes a Viernes
+                    Lunes a Jueves
                   </span>
                   <br />
                   <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
+                  <br />
+                  Recibimos hasta las 4:00 P.M.
+                </p>
+
+                <p>
+                  <span className="color-brand-green-bright  font-bold">
+                    Viernes
+                  </span>
+                  <br />
+                  <strong className="font-bold">8:00 A.M. a 5:00 P.M.</strong>
+                  <br />
+                  Recibimos hasta las 2:00 P.M.
                 </p>
 
                 <p>
@@ -120,6 +132,8 @@ export default function Home() {
                   </span>
                   <br />
                   <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
+                  <br />
+                  Recibimos hasta las 2:00 P.M.
                 </p>
 
                 <p>
@@ -143,9 +157,9 @@ export default function Home() {
           <div className={styles.hotlTextSecond}>
             <div>
               <p className="font-bold text-center">
-                En nuestro hotel tu perro recibirá un trato familiar,
-                personalizado y 100% libre de jaulas, procurándole ejercicios,
-                juegos y cariño diario con supervisión constante.
+                En nuestro hotel tu perro recibirá un trato familiar y
+                personalizado, procurándole ejercicios, juegos y cariño diario
+                con supervisión constante.
               </p>
 
               <p className="text-uppercase">
@@ -153,7 +167,7 @@ export default function Home() {
               </p>
 
               <ul>
-                <li>Hospedaje 100% libre de jaulas.</li>
+                <li>Hospedaje</li>
                 <li>Agua potable y fresca permanente.</li>
                 <li>
                   Derecho al área de juego con aproximadamente 120 m<sup>2</sup>{' '}
@@ -189,7 +203,7 @@ export default function Home() {
               <p className="text-center font-bold">Perros hasta 20 libras</p>
               <div className={styles.price}>
                 <span className={styles.currency}>RD$</span>
-                <span className={styles.priceBase}>750</span> por noche
+                <span className={styles.priceBase}>775</span> por noche
               </div>
 
               <p>
@@ -273,7 +287,7 @@ export default function Home() {
               <p className={`${styles.playdayPrice} text-center`}>
                 <strong className="font-bold">
                   <span>RD$</span>
-                  <span itemProp="price">400</span> por dia
+                  <span itemProp="price">450</span> por dia
                 </strong>
               </p>
             </div>
@@ -298,7 +312,9 @@ export default function Home() {
 
             <div className="text-center">
               <p className="font-bold">
-                <span className="color-text-brand-orange">Martes y Jueves</span>
+                <span className="color-text-brand-orange">
+                  Martes, Miércoles y Jueves
+                </span>
                 <br />
                 Recibimos a partir de las 8:00 A.M. hasta las 11:00 A.M.
                 <br />
@@ -404,7 +420,7 @@ export default function Home() {
           <div className={`${styles.groomingHours} text-center`}>
             <p>
               <span className="color-text-brand-orange font-bold">
-                Lunes a Viernes
+                Lunes a Jueves
               </span>
               <br />
               <strong className="font-bold">8:00 A.M. a 6:00 P.M.</strong>
@@ -413,19 +429,29 @@ export default function Home() {
             </p>
 
             <p>
+              <span className="color-text-brand-orange font-bold">Viernes</span>
+              <br />
+              <strong className="font-bold">8:00 A.M. a 5:00 P.M.</strong>
+              <br />
+              Recibimos hasta las 2:00 P.M.
+            </p>
+
+            <p>
               <span className="color-text-brand-orange font-bold">Sábados</span>
               <br />
               <strong className="font-bold">9:00 A.M. a 4:00 P.M.</strong>
               <br />
-              Recibimos hasta las 2:30 P.M.
+              Recibimos hasta las 2:00 P.M.
             </p>
 
             <p>
               <span className="color-text-brand-orange font-bold">
-                Domingos
+                Domingos y feriados
               </span>
               <br />
               <strong className="font-bold">Cerrados.</strong>
+              <br />
+              No recepción ni entrega.
               <br />
               Sólo trabajabmos de manera interna.
             </p>
