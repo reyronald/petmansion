@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 
 import { Blurhash } from 'react-blurhash'
 
@@ -31,6 +31,10 @@ export default function Home() {
             width={367}
             height={407}
             itemProp="logo"
+            style={{
+              maxWidth: '100%',
+              height: 'auto',
+            }}
           />
 
           <p className={styles.description} itemProp="description">
@@ -89,8 +93,11 @@ export default function Home() {
             src="/play-area.jpg"
             alt="área de juegos del hotel"
             loading="lazy"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
           />
           <link itemProp="image" href="/play-area.jpg"></link>
         </div>
@@ -251,8 +258,11 @@ export default function Home() {
             src="/playday.jpg"
             alt="joven jugando con perros"
             loading="lazy"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
           />
         </div>
 
