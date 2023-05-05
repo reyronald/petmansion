@@ -1,7 +1,6 @@
 import Head from 'next/head'
+import { AppProps } from 'next/app'
 import { Analytics } from '@vercel/analytics/react'
-
-import { AppProps } from 'next/dist/next-server/lib/router/router'
 
 import '../styles/reset.css'
 import '../styles/globals.css'
