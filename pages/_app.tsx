@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react'
 
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 
@@ -41,6 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta itemProp="priceRange" content="$" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   )
 }
