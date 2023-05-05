@@ -14,7 +14,8 @@ import buttonStyles from '../styles/Button.module.css'
 // TODO optimize fonts
 // TODO position svg paws absoolutely
 
-const rvspHereLink = 'https://forms.gle/Hjpnr5Z1ngdY5rRv8'
+const rvspHereLink =
+  'https://docs.google.com/forms/d/e/1FAIpQLSfRBuSCWPTlC0PPlo2m3PvZZWyVVHPnjXxr7avUUby6jqpQXw/viewform?usp=sf_link'
 
 export default function Home() {
   return (
